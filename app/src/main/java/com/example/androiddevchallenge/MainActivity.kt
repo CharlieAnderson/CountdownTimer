@@ -25,6 +25,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material.CircularProgressIndicator
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.runtime.Composable
@@ -73,6 +74,7 @@ fun MyApp() {
 @Composable
 fun DrawAndroidCircleCanvas() {
     val infiniteTransition = rememberInfiniteTransition()
+
     val y by infiniteTransition.animateFloat(
         initialValue = 0f,
         targetValue = 3000f,
@@ -95,8 +97,8 @@ fun DrawAndroidCircleCanvas() {
     )
     Canvas(modifier = Modifier
         .clip(CircleShape)
-        .width(400.dp)
-        .height(400.dp)
+        .width(390.dp)
+        .height(390.dp)
         .background(color = Color.DarkGray)
         .border(width = 3.dp, color = Color.Red, shape = CircleShape)
     ) {
@@ -131,7 +133,15 @@ fun DrawAndroidCircleCanvas() {
         painter = painterResource(R.drawable.jetpack),
         contentScale = ContentScale.Crop,
         contentDescription = null,
-        modifier = Modifier.size(200.dp).offset(100.dp, 150.dp)
+        modifier = Modifier
+            .size(200.dp)
+            .offset(100.dp, 150.dp)
+    )
+
+    CircularProgressIndicator(
+        modifier = Modifier.width(390.dp).height(390.dp),
+        color = Color.Green,
+        strokeWidth = 3.dp
     )
 }
 
