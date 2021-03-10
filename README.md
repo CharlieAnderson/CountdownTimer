@@ -16,7 +16,7 @@ and getting the clouds to fly by.
 
 
 ## :camera_flash: Screenshots
-<img src="week2jetpack.gif" height="800"/>
+<img src="jetpackweek2.gif" height="800"/>
 
 ## License
 ```
