@@ -64,6 +64,7 @@ fun StopButton(
         Button(
             onClick = {
                 viewModel.stopTimer()
+                viewModel.setTimer(30, 1)
             }, shape = RoundedCornerShape(3.dp),
             colors = ButtonDefaults.buttonColors(backgroundColor = Color.Red),
             content = {
