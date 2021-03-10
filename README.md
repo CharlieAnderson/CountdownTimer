@@ -16,6 +16,7 @@ and getting the clouds to fly by.
 
 
 ## :camera_flash: Screenshots
+![](week2jetpack.gif)
 
 ## License
 ```
